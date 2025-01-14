@@ -1,0 +1,202 @@
+:root {
+    --form-select-bg: #e7e7e7;
+    background-color: #000;
+}
+
+body {
+    background-color: #000;
+}
+
+select {
+    appearance: none;
+    outline: 0;
+    background: white;
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    color: #000000b3;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+select:hover {
+    color: black;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.text-white {
+    color: white;
+}
+
+.grid-legend {
+    /* max-height: 100px; */
+    max-width: 100%;
+    background-color: #212121;
+}
+
+.nav-list-item {
+    display: inline-block;
+}
+
+.legend-ul {
+    align-items: center;
+    width: 90%;
+}
+
+.lg-btn {
+    transition-duration: 0.4s;
+    background-color: aqua;
+}
+
+.lg-btn:hover {
+    background-color: #e7e7e7;
+    opacity: 0.7;
+}
+
+#container {
+    box-shadow: 0 0 10px 2px white;
+    position: relative;
+    top: 30px;
+    background-color: rgb(255, 255, 255);
+    /* outline: 2px solid black; */
+    font-size: 0;
+    margin: auto;
+    width: 1400px;
+    height: 520px;
+    padding: 0;
+    border: none;
+}
+
+.grid {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    /* border-radius: 15%; */
+    background-color: rgb(255, 255, 255);
+    outline: 1px solid #a6d4ff;
+    display: inline-block;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#status-update {
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.w-5 {
+    width: 5rem;
+}
+
+.my-dropdown {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    border: none;
+}
+
+/* #b1-1 {
+    background-color: gray;
+    height: 95px;
+    width: 35px;
+    animation: Wall 0.2s ease;
+
+} */
+
+.start {
+    background-color: green;
+    box-shadow: 0 0 10px 4px green;
+}
+
+.end {
+    background-color: red;
+    box-shadow: 0 0 10px 4px red;
+}
+
+.wall {
+    background-color: black;
+    outline: 1px solid #000;
+    animation: Wall 0.3s ease;
+}
+
+.visiting {
+    background-color: blue;
+    outline: 1px solid black;
+    animation: visiting 1s ease;
+}
+
+.finalPath {
+    background-color: yellow;
+    outline: 1px solid rgba(204, 204, 0, 0.977);
+    box-shadow: 0 0 10px 4px rgba(255, 255, 0, 0.7);
+    animation: path 0.3s ease;
+}
+
+.refresh {
+    background-color: white;
+    animation: refresh 0.3s ease;
+}
+
+@keyframes Wall {
+    from {
+        background-color: white;
+        transform: scale(0);
+    }
+
+    to {
+        background-color: black;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes visiting {
+    from {
+        background-color: white;
+        outline: 1px solid #a6d4ff;
+        transform: scale(0);
+    }
+
+    to {
+        background-color: blue;
+        outline: 1px solid black;
+        transform: scale(1.05);
+    }
+}
+
+
+@keyframes path {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        background-color: yellow;
+        outline: 1px solid rgba(204, 204, 0, 0.977);
+        box-shadow: 0 0 10px 4px rgba(255, 255, 0, 0.7);
+        transform: scale(1.05);
+    }
+}
+
+@keyframes refresh {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        background-color: white;
+        transform: scale(1.09);
+    }
+}
